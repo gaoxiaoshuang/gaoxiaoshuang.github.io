@@ -2,7 +2,12 @@ body {
   font: 14px 微软雅黑, sans-serif;
   margin: 0px;
   padding: 0px;
+  font-size: 14px;
   background: url('../images/resume-bg.png');
+}
+
+p, h2 {
+  margin: 0;
 }
 
 .resume-main {
@@ -14,8 +19,6 @@ body {
 }
 
 .title-box {
-  font-size: 22px;
-  font-weight: bold;
   color: #333;
   line-height: 60px;
   position: relative;
@@ -38,7 +41,8 @@ body {
 
 .info-box {
   border-radius: 15px;
-  background: url('../images/resume-bg.png');
+  background: #fbfbfb;
+  border: 1px solid #f3f3f3;
   padding: 30px 30px;
   margin: 30px 0;
   display: flex;
@@ -46,10 +50,65 @@ body {
 }
 
 .info-box p {
-  font-size: 16px;
   color: #666;
 }
 
 .info-box p span {
   font-weight: bold;
+}
+
+.skill-box .skill-icon label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  color: #3c763d;
+  margin-right: 5px;
+}
+.skill-box .skill-icon label:first-child {
+  background: #dff0d8;
+  border: 1px solid #d6e9c6;
+}
+
+.skill-box .skill-icon label:last-child {
+  background: #fcf8e3;
+  border: 1px solid #faebcc;
+  margin-left: 20px;
+}
+
+.skill-box .skill-list {
+  margin: 20px 0;
+  line-height: 50px;
+}
+.skill-box span {
+  padding: 8px 10px;
+  border: 1px solid #f3f3f3;
+  background: #fbfbfb;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  line-height: 20px;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  color: #3c763d;
+}
+
+.skill-box .know {
+  background-color: #fcf8e3;
+  border: 1px solid #faebcc;
+  color: #8a6d3b;
+}
+
+.experience-box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed #e0e0e0;
+  padding-bottom: 20px;
+  line-height: 30px;
+}
+
+.experience-left {
+  width: 300px;
+  color: #666;
 }
