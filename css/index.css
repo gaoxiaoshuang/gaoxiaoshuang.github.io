@@ -1,175 +1,296 @@
 body {
-  font: 14px 微软雅黑, sans-serif;
-  margin: 0px;
-  padding: 0px;
-  font-size: 14px;
-  background: url('../images/resume-bg.png');
+    background-image: url('../images/soft_wallpaper.png');
+    font: 14px '微软雅黑', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-p, h2 {
-  margin: 0;
+
+/* 顶部 */
+
+.sticker {
+    position: fixed;
+    top: -60px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    background: rgba(255, 255, 255, .98);
+    height: 55px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    z-index: 10;
 }
 
-.resume-main {
-  background: #fff;
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 50px 50px;
-  border-radius: 15px;
+.titleName {
+    border: none;
+    margin: 0 0 0 50px;
+    line-height: 55px;
+    padding: 0 0 0 8px;
 }
 
-.title-box {
-  color: #333;
-  line-height: 60px;
-  position: relative;
+.myphone {
+    height: 45px;
+    margin: 13px 0 0 0;
+    line-height: 45px;
+    position: absolute;
+    top: -4px;
+    right: 15px;
+    text-align: right;
 }
 
-.title-box .avatar {
-  position: absolute;
-  right: 0;
-  top: 0;
+.phoneIcon {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    background: url('../images/icons.png') -45px 40px;
+    border: none;
+    right: 125px;
+    float: left;
 }
 
-.title-box .avatar a {
-  display: inline-block;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: url('../images/resume-avatar.png') no-repeat center;
-  background-size: cover;
+.titleName:before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: 8px;
+    top: 5px;
+    background: url('../images/icons.png') -90px -45px;
 }
 
-.info-box {
-  border-radius: 15px;
-  background: #fbfbfb;
-  border: 1px solid #f3f3f3;
-  padding: 30px 30px;
-  margin: 30px 0;
-  display: flex;
-  line-height: 24px;
-  display: -webkit-flex;
-  justify-content: space-between;
+
+/* 主体 */
+
+.main {
+    max-width: 1000px;
+    margin: 60px auto 30px;
+    padding: 60px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+    position: relative;
 }
 
-.info-box p {
-  color: #666;
+.title {
+    clear: both;
+    font: bold 20px/12px '微软雅黑', sans-serif;
+    margin: 20px -60px 10px;
+    border-left: 52px solid #444;
+    color: #444;
+    padding: 1px 0 0 8px;
+    letter-spacing: 3px;
+    position: relative;
 }
 
-.info-box p span {
-  font-weight: bold;
+.title:before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    left: -105px;
+    top: -15px;
+    background-image: url('../images/icons.png');
 }
 
-.skill-box .skill-icon label {
-  display: inline-block;
-  width: 17px;
-  height: 17px;
-  color: #3c763d;
-  margin-right: 5px;
-}
-.skill-box .skill-icon label:first-child {
-  background: #dff0d8;
-  border: 1px solid #d6e9c6;
+#info:before {
+    background-position: -90px -45px;
 }
 
-.skill-box .skill-icon label:last-child {
-  background: #fcf8e3;
-  border: 1px solid #faebcc;
-  margin-left: 20px;
+#skills:before {
+    background-position: left top;
 }
 
-.skill-box .skill-list {
-  margin: 20px 0;
-  line-height: 50px;
-}
-.skill-box span {
-  padding: 8px 10px;
-  border: 1px solid #f3f3f3;
-  background: #fbfbfb;
-  border-radius: 5px;
-  display: inline-block;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  line-height: 20px;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-  color: #3c763d;
+#expre:before {
+    background-position: -45px top;
 }
 
-.skill-box .know {
-  background-color: #fcf8e3;
-  border: 1px solid #faebcc;
-  color: #8a6d3b;
+#project:before {
+    background-position: left -45px;
 }
 
-.experience-box {
-  margin-top: 20px;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  border-bottom: 1px dashed #e0e0e0;
-  padding-bottom: 20px;
-  line-height: 30px;
+#edu:before {
+    background-position: right top;
 }
 
-.experience-left {
-  width: 300px;
-  color: #666;
+.iconbox {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 55px;
+    right: 60px;
+    text-align: right;
 }
 
-.project-box ul {
-  -webkit-padding-start: 0;
-  -webkit-margin-before: 0;
-  -webkit-margin-after: 0;
-  -webkit-margin-start: 0;
-  -webkit-margin-end: 0;
+.socialIcon {
+    width: 60px;
+    height: 60px;
+    margin: 0 0 0 3px;
+    display: inline-block;
+    border-radius: 50%;
+    background: url('../images/photo-self.png') center;
+    background-size: cover;
 }
 
-.project-box ul li {
-  margin-top: 30px;
-  list-style: none;
-  padding: 0 0 20px 0;
-  border-bottom: 1px dashed #ccc;
+.person-info {
+    width: 100%;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    border-radius: 8px;
+    line-height: 24px;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: space-between;
+    justify-content: space-between;
+    -moz-box-sizing: border-box;
+    /*Firefox3.5+*/
+    -webkit-box-sizing: border-box;
+    /*Safari3.2+*/
+    -o-box-sizing: border-box;
+    /*Opera9.6*/
+    -ms-box-sizing: border-box;
+    /*IE8*/
+    box-sizing: border-box;
 }
 
-.project-box ul li:first-child {
-  margin-top: 0;
+.person-info p {
+    float: left;
+    color: #666;
 }
 
-.project-title {
-  font-size: 16px;
-  color: #ff6700;
+.introBox {
+    margin: 40px 0;
+    color: #666;
+    font-size: 14px;
 }
 
-.project-title a {
-  text-decoration: none;
-  color: #ff6700;
+.skillbox {
+    margin-bottom: 40px;
 }
 
-.project-desc {
-  margin-top: 20px;
-  line-height: 24px;
-  color: #666;
+.skillbox span {
+    padding: 8px 10px;
+    border: 1px solid #f3f3f3;
+    background: #fbfbfb;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 5px;
 }
 
-.project-desc-title {
-  font-weight: bold;
-  color: #333;
-  font-size: 16px;
+.skills1 {
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
 }
 
-.project-desc label {
-  display: inline-block;
-  padding: 0px 8px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-  background: #fbfbfb;
-  border: 1px solid #f3f3f3;
-  border-radius: 5px;
+.skills2 {
+    background-color: #fcf8e3;
+    border: 1px solid #faebcc;
+    color: #8a6d3b;
 }
 
-.edu-box {
-  display: flex;
-  justify-content: space-between;
-  display: -webkit-flex;
-  color: #666;
+.basicintro {
+    margin-top: 25px;
+    line-height: 20px;
+}
+
+.color1 {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    margin-right: 10px;
+}
+
+.color2 {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-color: #fcf8e3;
+    border: 1px solid #faebcc;
+    color: #8a6d3b;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+
+/*工作经历*/
+
+.exprebox {
+    overflow: hidden;
+    clear: both;
+    color: #666;
+    margin-top: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+}
+
+.last-child {
+    border-bottom: none;
+}
+
+.exprebox .left {
+    width: 30%;
+    line-height: 30px;
+    float: left;
+}
+
+.exprebox .right {
+    line-height: 30px;
+    float: left;
+}
+
+
+/*项目经验*/
+
+.projectbox {
+    line-height: 24px;
+    color: #666;
+    margin-top: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 20px;
+}
+
+.projectbox a {
+    text-decoration: none;
+    color: #ff6700;
+}
+
+.projectbox p {
+    margin-top: 10px;
+}
+
+.projectbox .smalltitle {
+    font-size: 16px;
+    color: #ff6700;
+}
+
+.projectbox .detail {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.projectbox label {
+    display: inline-block;
+    padding: 0px 8px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background: #fbfbfb;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+}
+
+
+/*教育经历*/
+
+.edubox {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    color: #666;
+    margin-top: 30px;
 }
